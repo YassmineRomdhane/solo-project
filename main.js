@@ -10,12 +10,13 @@ $('.input1').click(function(){
    $('.store').toggle('slow')
    $('#p1').hide('fast')
    $('h1').hide('fast')
+   $('footer').hide('fast')
    $('.in').show('slow')
+
    console.log($('.inputOfbox').val())
 })
 
 var data="" 
-
 
 
 $('.input2').click(function(){
@@ -26,6 +27,7 @@ data= $('#fname').val() + " " + $('#lname').val() + " " + $("#address").val() + 
 })
 
 localStorage.setItem($('#fname').val , data)
+
 
 
  
